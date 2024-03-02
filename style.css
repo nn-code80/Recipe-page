@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+:root{
+
+/* ## Colors */
+
+/* ### Primary */
+
+--Nutmeg: hsl(14, 45%, 36%);
+--DarkRaspberry: hsl(332, 51%, 32%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--RoseWhite: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--LightGrey: hsl(30, 18%, 87%);
+--WengeBrown: hsl(30, 10%, 34%);
+--DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+/* font size for paragraphs is 16px 
+Young Serif - wight 400 -  font-family: "Young Serif", serif;
+Outfit - weight 400,600,700 -   font-family: "Outfit", sans-serif;
+*/
+
+
+body{
+ font-size:16px;
+ font-family: "Outfit", sans-serif;
+ font-weight: 400;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--Eggshell);
+
+}
+
+main{
+    max-width: 800px;
+    width:95%;
+    margin: 0 auto;
+    padding:30px;
+    margin: 7rem 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+header figure img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+ul li, ol li{
+    margin-left: 17px;
+}
+
+h1, h2{
+font-family: "Young Serif", serif;    
+}
+
+.intro header h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    font-weight:100;
+}
+
+.intro header p{
+line-height: 1.4;
+margin-bottom: 1.5rem;
+font-weight: 300;
+}
+
+.preptime{
+    background-color: var(--RoseWhite);
+    padding: 23px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.preptime h3{
+    color: var(--DarkRaspberry)
+}
+
+.preptime ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.preptime ul li{
+    font-weight: 200;
+    padding-left: 1rem;
+}
+
+span.bold{
+    font-weight: 600;
+}
+
+span.bold2{
+    font-weight: 600;
+    color: var(--DarkRaspberry);
+}
+
+.ingredients h2, .instructions h2, .nutrition h2{
+color: var(--DarkRaspberry);
+font-weight: 100;
+margin-bottom: 1.5rem;
+}
+
+.ingredients ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ingredients ul li{
+    font-weight: 200;
+    padding-left: 1rem;
+}
+
+.divider{
+    height:1px;
+    width: 100%;
+    background-color: var(--LightGrey);
+    margin: 1.5rem 0;
+}
+
+.divider2{
+    height:1px;
+    width: 100%;
+    background-color: var(--LightGrey);
+    margin: 1rem 0;
+}
+
+.instructions ol {
+    color: var(--DarkRaspberry);
+}
+
+.instructions ol li p{
+    color: black;
+    line-height: 1.4;
+}
+
+.instructions ol li{
+    font-weight: 200;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+.nutrition p.table {
+    margin-bottom: 1.5rem;
+   
+}
+
+.nutrition p{
+    font-weight: 200;
+}
+
+.calories, .carbs, .protein, .fat{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+@media (max-width:400px) {
+    .intro header h1{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
